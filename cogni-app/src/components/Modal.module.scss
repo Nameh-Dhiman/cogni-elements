@@ -1,0 +1,135 @@
+.ModalContainer {
+  box-sizing: border-box;
+  width: 58vw;
+  height: 90vh;
+  position: fixed;
+  z-index: 1000;
+  top: 50%;
+  left: 50%;
+  padding:2rem;
+  transform: translate(-50%, -50%);
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  background: #ffffff;
+  -webkit-box-shadow: 5px 5px 18px #bababa, -5px -5px 18px #ffffff;
+  box-shadow: 5px 5px 18px #bababa, -5px -5px 18px #ffffff;
+
+  & .ModalHeader{
+    display:flex;
+    justify-content: space-between;
+    gap:2rem;
+
+    & h2{
+        margin-top:0;
+        color:#405361;
+    }
+
+    & p{
+        color:#B3B3B3;
+        font-size: 0.75rem;
+    }
+  }
+
+  & .ModalContent{
+    display:grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 5rem;
+
+    & .Form{
+        & .FormInfoHeader{
+            margin:1rem auto;
+            & h4{
+                color:#405361;
+                margin:0.5rem auto 0.4rem;
+            }
+
+            & p{
+                font-size: 0.65rem;
+                color:#B3B3B3;
+                margin:0;
+            }
+        }
+
+        & .FormInfoFooter{
+            font-size: 0.65rem;
+            margin: 0.5rem auto;
+        }
+    }
+
+    & .Details{
+        background:#FAFAFA;
+        padding: 0rem 2rem;
+
+        & .InfoHeader{
+            margin:1rem auto;
+            & h4{
+                color:#405361;
+                margin:0.5rem auto 0.4rem;
+            }
+
+            & p{
+                font-size: 0.65rem;
+                color:#B3B3B3;
+                margin:0;
+            }
+        }
+
+        & .PriceInfo{
+            border-bottom: 2px dashed #B3B3B3;
+            padding-bottom: 1rem;
+            & div{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 0.85rem;
+                font-weight: 500;
+
+                & p{
+                    margin: 0.4rem 0;
+                    color:#7e7e7e
+                }
+            }
+        }
+
+        & .DiscountInfo{
+            padding: 1rem auto;
+            & div{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 0.85rem;
+                font-weight: 500;
+
+                & p{
+                    margin: 0.4rem 0;
+                }
+            }
+        }
+
+        & .Total{
+            background:#d4d4d4;
+            display:flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding:0.5rem;
+
+            & .TotalInfo{
+                & h4{
+                   margin:0.5rem auto; 
+                }
+                & p{
+                    font-size: 0.95rem;
+                    margin:0;
+                }
+            }
+        }
+    }
+  }
+
+  & .DownloadSheet{
+    font-size: 0.85rem;
+    font-weight: 500;
+    color:#405361;
+    text-align: center;
+  }
+}
